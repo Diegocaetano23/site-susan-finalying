@@ -1,0 +1,45 @@
+.pagina1 {
+    background-color: #ffe0be;
+    text-align: center;
+    
+}
+
+.titulo-page {
+    color: rgb(38, 38, 102);
+    font-size: 37px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    
+    
+}
+
+.textopage {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    text-align: justify;
+    margin: 0 200px; /* Adiciona margens de 100px aos lados */
+}
+
+.sub-tit-pagina {
+    color: rgb(38, 38, 102);
+    font-size: 28px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.sub-tit-pagina1 {
+    color: rgb(38, 38, 102);
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.intropage {
+    text-align: justify;
+    margin: 0 200px; /* Adiciona margens de 100px aos lados */
+}
+
