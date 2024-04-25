@@ -11,14 +11,25 @@
 
 
           <div class="topnav">
-            <img src="./src/css/img/logo work nobg.png" alt="" class="logo-topnav">
-            <p class="link-sem-decoracao"><a href="#quem-sou-eu">Sobre mim</a></p>
-            <p class="link-sem-decoracao"><a href="#servicos">Como posso te ajudar?</a></p>
-            <p class="link-sem-decoracao"><a href="#faq">Perguntas frequentes</a></p>
-            <p class="link-sem-decoracao"><a href="#contatos">Contatos</a></p>
+            <a href="./index.html">
+              <img src="./src/css/img/logo work nobg.png" alt="" class="logo-topnav">
+            </a>
+            <p class="link-sem-decoracao"><a href="javascript:void(0)" onclick="scrollToElement('quem-sou-eu')">Sobre mim</a></p>
+            <p class="link-sem-decoracao"><a href="javascript:void(0)" onclick="scrollToElement('servicos')">Como posso te ajudar?</a></p>
+            <p class="link-sem-decoracao"><a href="javascript:void(0)" onclick="scrollToElement('faq')">Perguntas frequentes</a></p>
+            <p class="link-sem-decoracao"><a href="javascript:void(0)" onclick="scrollToElement('contatos')">Contatos</a></p>
           </div>
 
-          <div class="capa">
+          <script>
+            // Função para rolar suavemente para o elemento alvo
+            function scrollToElement(elementId) {
+              var element = document.getElementById(elementId);
+              element.scrollIntoView({ behavior: 'smooth', block: 'start' }); // Ajuste 'smooth' para controlar a velocidade
+            }
+          </script>
+          
+
+          <div class="capa" id="topo">
             <img class="imagem" src="./src/css/img/capahorizontaldegrade1.png" alt="">
             <img class="imagem-vertical1" src="./src/css/img/capaverticalok3.png" alt="">
 
@@ -337,7 +348,7 @@
           <img src="./src/css/img/instagram1.png" alt="Descrição da imagem" class="textoa1">
 
           <div class="textoa">
-            <p class="link-sem-decoracao1"><a href="https://www.instagram.com/psicologa_susanelise/">psicologa_susanelise</a></p>
+            <p class="link-sem-decoracao1"><a href="https://www.instagram.com/psicologa_susanelise/"target="_blank" >psicologa_susanelise</a></p>
           </div>
    
         </div>
@@ -348,7 +359,7 @@
             <img  src="./src/css/img/telwhapp1.png" alt="Descrição da imagem" class="textoa1">
   
             <div class="textoa">
-              <p class="link-sem-decoracao1"><a href="https://wa.me/5512982560443">(12) 98256-0443</a></p>
+              <p class="link-sem-decoracao1"><a href="https://wa.me/5512982560443"target="_blank">(12) 98256-0443</a></p>
             </div>
      
           </div>
@@ -358,7 +369,7 @@
             <img src="./src/css/img/email1.png" alt="Descrição da imagem" class="textoa1">
   
             <div class="textoa">
-              <p class="link-sem-decoracao1"><a href="">elisemerces@gmail.com</a></p>
+              <p class="link-sem-decoracao1"><a href="#contatos">elisemerces@gmail.com</a></p>
             </div>
      
           </div>
