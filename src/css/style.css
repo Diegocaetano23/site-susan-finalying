@@ -52,25 +52,31 @@ margin: 0 auto; /* centralizar a imagem */
   }
 
 
-  .topnav {
-background-color: #ffffff;
-overflow: hidden;
-height: 120px;
-display: flex; /* Adicionado */
-justify-content: center; /* Centralize os itens horizontalmente */
-align-items: center; /* Adicionado */
-padding: 20px 0; /* Adicione um pouco de preenchimento para espaçamento */  
-}
+    .topnav {
+  background-color: #ffffff;
+  overflow: hidden;
+  height: 120px;
+  display: flex; /* Adicionado */
+  justify-content: center; /* Centralize os itens horizontalmente */
+  align-items: center; /* Adicionado */
+  padding: 20px 0; /* Adicione um pouco de preenchimento para espaçamento */  
+
+
+  }
+
+
 
 
   /* Outras regras de estilo existentes */
 
   .topnav p {
     margin-right: 30px; /* Altere o valor conforme necessário para ajustar o espaçamento */
-    
+    display: none; /* Oculta os parágrafos por padrão */
+    font-size: 14px;
+
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
   }
-
-
+ 
 
 .link-sem-decoracao a {
   text-decoration: none; /* Remover sublinhado */
@@ -78,9 +84,13 @@ padding: 20px 0; /* Adicione um pouco de preenchimento para espaçamento */
   color: #5a5a5a;
 } 
 
-.espaco1{
-  text-decoration: none;
-}
+.link-sem-decoracao1 a {
+  text-decoration: none; /* Remover sublinhado */
+  color: inherit; /* Herdar a cor do texto do elemento pai */
+  color: #5a5a5a;
+  margin-left: 10px;
+} 
+
 
 
 
@@ -89,6 +99,7 @@ padding: 20px 0; /* Adicione um pouco de preenchimento para espaçamento */
     float: left; /* alinhando à esquerda */
     margin-left: 15px;
   }
+
 
   .capa {
 position: relative;
@@ -229,6 +240,7 @@ color: rgb(65, 60, 60);
     max-width: 100%; /* garantir que a imagem seja responsiva */
     height: auto;
     border-radius: 5px; /* bordas arredondadas */
+    margin-top: 80px;
   }
 
   .texto-quemsoueu {
@@ -312,6 +324,15 @@ background-color: #d9006f; /* Cor rosa mais escura ao passar o mouse */
 
 
   @media screen and (min-width: 768px) {
+    .topnav p {
+      display: inline-block; /* Mostra os parágrafos para telas maiores que 768px */
+      margin: 0 10px; /* Adiciona um espaço entre os parágrafos */
+    }
+    
+  }
+
+
+  @media screen and (min-width: 768px) {
 
     .container1{
       margin-left: 300px !important;
@@ -320,12 +341,22 @@ background-color: #d9006f; /* Cor rosa mais escura ao passar o mouse */
 
     
     .topnav {
-background-color: #ffffff;
-overflow: hidden;
-height: 120px;
-display: flex; /* Adicionado */
-justify-content: space-between; /* Adicionado */
-align-items: center; /* Adicionado */
+      background-color: #ffffff;
+      overflow: hidden;
+      height: 100px;
+      display: flex; /* Adicionado */
+      justify-content: center; /* Centralize os itens horizontalmente */
+      align-items: center; /* Adicionado */
+      padding: 20px 0; /* Adicione um pouco de preenchimento para espaçamento */
+      width: 100%; /* Define a largura da barra de navegação */
+      position: fixed; /* Fixa a barra de navegação */
+      top: 0; /* Alinha a barra de navegação ao topo */
+      left: 0; /* Alinha a barra de navegação à esquerda */
+      z-index: 1000; /* Garante que a barra de navegação esteja acima de outros elementos */
+  }
+
+  .capa {
+    padding-top: 100px; /* Adiciona um espaço no topo da página igual à altura da barra de navegação */
 }
 
   .topnav img {
@@ -348,6 +379,7 @@ max-width: calc(100% - 40px);
 padding: 0 20px;
 font-size: 30px;
 color: rgb(47, 38, 104);
+margin-top: 80px;
 }
 
     
@@ -746,11 +778,13 @@ margin-bottom: -80px;
 
   .titulo-servicos1{
     font-weight: bolder;
-    margin-top: 18px;
+    margin-top:78px !important; 
     font-size: 30px;
     color: rgb(47, 38, 104);
     text-align: center;
   }
+
+
 
   .titulo-quemsoueu{
     margin-top:85px;
