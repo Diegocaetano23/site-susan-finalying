@@ -144,6 +144,7 @@ margin-bottom: 20px; /* espaço abaixo dos textos */
     cursor: pointer;
     border-radius: 40px;
     transition: background-color 0.3s ease;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4 ); /* Adiciona uma sombra suave */
     }
   
     .center-btn{
@@ -177,6 +178,20 @@ margin-bottom: 20px; /* espaço abaixo dos textos */
       }
 
     
+      .agendar-consulta-btn, .btn-servicos {
+        transition: transform 0.3s ease;
+      }
+
+      /* Quando o cursor passa sobre o botão */
+.agendar-consulta-btn:hover, .btn-servicos:hover {
+  transform: scale(1.1); /* Aumenta o tamanho do botão em 10% */
+}
+
+/* Quando o botão é clicado */
+.agendar-consulta-btn:active, .btn-servicos:active {
+  transform: scale(0.9); /* Reduz o tamanho do botão em 10% */
+}
+
 
 
     
@@ -190,6 +205,7 @@ font-size: 16px;
 cursor: pointer;
 border-radius: 40px;
 transition: background-color 0.3s ease;
+box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4 ); /* Adiciona uma sombra suave */
 }
 
 .agendar-consulta-btn:hover {
@@ -202,6 +218,7 @@ background-color:#ec73b6; /* cor rosa mais escura ao passar o mouse */
   color: rgb(41, 41, 104);
   font-size: 45px;
   font-weight: bold;
+  font-family:Verdana, Geneva, Tahoma, sans-serif
   
 
 }
@@ -304,7 +321,7 @@ font-size: 40px !important; /* Usando !important para garantir que esta regra te
 
 .agendar-consulta-btn {
 
-top: calc(20% + 245px) !important; /* Ajustando a distância do topo */
+top: calc(20% + 260px) !important; /* Ajustando a distância do topo */
 
 }
 
@@ -312,11 +329,30 @@ top: calc(20% + 245px) !important; /* Ajustando a distância do topo */
 background-color: #d9006f; /* Cor rosa mais escura ao passar o mouse */
 }
 
+
+.logo-topnav {
+  float: left; /* ou display: inline-block; */
+  margin-right: 200px !important; /* Ajuste a margem conforme necessário */
+}
+.topnav p {
+  display: inline-block; /* Mostra os parágrafos para telas maiores que 768px */
+  margin: 0 15px !important; /* Adiciona um espaço entre os parágrafos */
+ 
+}
+
   }
 
 
 
   @media screen and (max-width: 768px) {
+    .foto-quemsoueu{
+      margin-top: -8px;
+    
+    }
+
+    .texto-quemsoueu{
+      margin-top: -88px;
+    }
 
   
     
@@ -324,6 +360,11 @@ background-color: #d9006f; /* Cor rosa mais escura ao passar o mouse */
 
 
   @media screen and (min-width: 768px) {
+
+    .logo-topnav {
+      float: left; /* ou display: inline-block; */
+      margin-right: 100px; /* Ajuste a margem conforme necessário */
+    }
     .topnav p {
       display: inline-block; /* Mostra os parágrafos para telas maiores que 768px */
       margin: 0 10px; /* Adiciona um espaço entre os parágrafos */
@@ -355,6 +396,8 @@ background-color: #d9006f; /* Cor rosa mais escura ao passar o mouse */
       z-index: 1000; /* Garante que a barra de navegação esteja acima de outros elementos */
   }
 
+
+
   .capa {
     padding-top: 100px; /* Adiciona um espaço no topo da página igual à altura da barra de navegação */
 }
@@ -362,8 +405,9 @@ background-color: #d9006f; /* Cor rosa mais escura ao passar o mouse */
   .topnav img {
     max-width: 140px; /* reduzindo o tamanho da imagem */
     float: left; /* alinhando à esquerda */
-    margin-left: 15px;
+    
   }
+
 
     .capa2 {
 display: none; /* Ocultar a divisão .capa2 em telas menores */
@@ -396,6 +440,7 @@ cursor: pointer;
 border-radius: 40;
 transition: background-color 0.3s ease;
 z-index: 1; /* Garantir que o botão fique sobre a imagem de fundo */
+box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4 ); /* Adiciona uma sombra suave */
 }
 
 .agendar-consulta-btn:hover {
@@ -518,6 +563,8 @@ font-size: 24px;
     }
 
     @media screen and (max-width: 320px) {
+
+  
 
 .mySlides img {
 max-width: 80%; /* Limita a largura máxima da imagem ao tamanho do contêiner */
@@ -1071,6 +1118,17 @@ display: block; /* Garante que a imagem seja tratada como um bloco */
 }
 
 @media screen and (max-width: 425px) {
+
+  .foto-quemsoueu{
+
+    margin-top: -65px;
+
+  }
+
+  .texto-quemsoueu{
+    margin-top: -100px !important;
+
+  }
 
 
   .texto-capa1{
