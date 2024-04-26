@@ -44,9 +44,11 @@ margin: 0 auto; /* centralizar a imagem */
     color:rgb(33, 33, 88);
 
   }  
+
+
   
   .quadrado-servico p1{
-    color: #000000;
+    color: #313131;
     text-align: left;
     font-size: 15px;
   }
@@ -63,6 +65,7 @@ margin: 0 auto; /* centralizar a imagem */
 
 
   }
+
 
 
 
@@ -191,7 +194,6 @@ margin-bottom: 20px; /* espaço abaixo dos textos */
 .agendar-consulta-btn:active, .btn-servicos:active {
   transform: scale(0.9); /* Reduz o tamanho do botão em 10% */
 }
-
 
 
     
@@ -340,11 +342,15 @@ background-color: #d9006f; /* Cor rosa mais escura ao passar o mouse */
  
 }
 
+
+
   }
 
 
 
   @media screen and (max-width: 768px) {
+
+     
     .foto-quemsoueu{
       margin-top: -8px;
     
@@ -358,6 +364,14 @@ background-color: #d9006f; /* Cor rosa mais escura ao passar o mouse */
     
   }
 
+
+  @media screen and (max-width: 769px) {
+
+    .quadrado-servico{
+      height: 400px;
+    }
+
+  }
 
   @media screen and (min-width: 768px) {
 
@@ -532,7 +546,7 @@ font-size: 24px;
 
     .quadrado-servico {
       width: calc(25% - 20px); /* Largura dos quadrados com margens */
-      height: 250px; /* Altura dos quadrados */
+      height: 320px; /* Altura dos quadrados */
       background-color: #ffffff; /* cor de fundo dos quadrados */
       margin-bottom: 20px; /* Espaçamento abaixo dos quadrados */
       text-align: center; /* Centralize o texto horizontalmente */
@@ -749,10 +763,7 @@ margin: 0 auto; /* Centralize horizontalmente */
       margin-bottom: 20px; /* Espaçamento abaixo dos quadrados */
         }
 
-    .txt {
-      text-align: justify;
-      justify-content: center;
-    }
+  
 
 
     .foto-quemsoueu,
@@ -1118,6 +1129,12 @@ display: block; /* Garante que a imagem seja tratada como um bloco */
 }
 
 @media screen and (max-width: 425px) {
+
+
+  .quadrado-servico{
+
+    height: 310px;
+  }
 
   .foto-quemsoueu{
 
