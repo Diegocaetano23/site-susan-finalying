@@ -1,8 +1,11 @@
-.pagina1 {
-    background-color: #ffe0be;
-    text-align: center;
-    
-}
+body {
+    margin-bottom: 0;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* cor rosa claro */
+    overflow-x: hidden; 
+  }
 
 .titulo-page {
     color: rgb(38, 38, 102);
